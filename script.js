@@ -46,20 +46,3 @@ input.addEventListener("keypress", addListAfterKeypress);
 ul.addEventListener("click", toggleClassDoneOnAndOff);
 
 delButton.addEventListener("click", deleteCompletedItems);
-
-
-
-// FROM STACK OVERFLOW...
-
- // if( event.target.classList.contains('done') ) {
- //    // add delete button
- //    const buttonElem = document.createElement('button');
- //    buttonElem.innerText = 'delete';
- //    buttonElem.onclick = function() { // remove list item here
- //        this.parentElement.remove()
- //    };
- //    event.target.appendChild(buttonElem);
-// 	} else {
- //    // remove the delete button
- //    event.target.getElementByTagName('button').remove();
-
