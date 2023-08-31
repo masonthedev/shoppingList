@@ -32,8 +32,11 @@ function toggleClassDoneOnAndOff(task) {
     } 
 }
 
-function delListElement(element) {
-
+function deleteCompletedItems() {
+    var listItems = document.querySelectorAll(".done");
+    listItems.forEach(function(item) {
+        item.remove();
+    });
 }
 
 button.addEventListener("click", addListAfterClick);
@@ -42,7 +45,7 @@ input.addEventListener("keypress", addListAfterKeypress);
 
 ul.addEventListener("click", toggleClassDoneOnAndOff);
 
-delButton.addEventListener("click", delListElement);
+delButton.addEventListener("click", deleteCompletedItems);
 
 
 
